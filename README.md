@@ -16,7 +16,7 @@ Follow these steps to set up and run the project locally.
 1. Clone the repository:
 
 ```bash
-git clone [[repository_url]](https://github.com/shivangforsure/NavNiwaas.git)
+git clone https://github.com/shivangforsure/NavNiwaas.git
 ```
 
 2. Navigate to the project repository:
