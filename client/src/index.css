@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    /* background-color: rgb(241, 245, 241); */
+    overflow: hidden;
+} 
+ .text-stroked {
+    -webkit-text-stroke-width: 1px;
+    /* Width of the stroke */
+    -webkit-text-stroke-color: black;
+    /* Color of the stroke */
+    -webkit-text-fill-color: transparent;
+    /* This is necessary to make the text transparent */
+} 
+
