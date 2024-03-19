@@ -2,7 +2,6 @@
 
 This project is about buying and selling real estate.
 
-#Preview
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 0 0 50%; max-width: 50%;">
