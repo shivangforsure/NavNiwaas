@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import SwiperCore from "swiper";
 import "swiper/css/bundle";
 import ListingItem from "../components/ListingItem";
+import Chatbot from "../components/Chatbot";
 import { HiMiniArrowRightCircle } from "react-icons/hi2";
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
 
   return (
     <div className="relative h-screen">
+      <Chatbot />
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
