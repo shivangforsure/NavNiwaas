@@ -15,7 +15,7 @@ import {
   FaShare,
 } from "react-icons/fa";
 import Contact from "../components/Contact";
-
+import { Link } from "react-router-dom";
 // https://sabe.io/blog/javascript-format-numbers-commas#:~:text=The%20best%20way%20to%20format,format%20the%20number%20with%20commas.
 
 export default function Listing() {
@@ -137,14 +137,36 @@ export default function Listing() {
               </li>
             </ul>
             {currentUser && listing.userRef !== currentUser._id && !contact && (
-              <button
-                onClick={() => setContact(true)}
-                className="bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3"
-              >
-                Contact landlord
-              </button>
+              <>
+                <button
+                  onClick={() => {
+                    setContact(true);
+                  }}
+                  className="bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3"
+                >
+                  Contact landlord
+                </button>
+                <Link>
+                  <button className="bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3">
+                    Buy Now
+                  </button>
+                </Link>
+              </>
             )}
             {contact && <Contact listing={listing} />}
+
+            <div className="creators-embed-wrapper">
+              <iframe
+                title="3D Model"
+                width="640"
+                height="480"
+                src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240413%2F2724131187869256%2F2724131187869256.glb&autorotate=true&json-data=1713001106059&decrypt=1&tv=163"
+                frameBorder="0"
+                allow="autoplay; fullscreen; vr"
+                allowFullScreen
+                style={{ border: "none" }}
+              ></iframe>
+            </div>
           </div>
         </div>
       )}
